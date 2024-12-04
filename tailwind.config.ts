@@ -8,11 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        title: "Kanit,regular",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        text: "#e1def7",
+        background: "#04040f",
+        primary: "#9089e1",
+        secondary: "#88225d",
+        accent: "#d3516f",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 } satisfies Config;
